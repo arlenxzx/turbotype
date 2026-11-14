@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+  }
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Pola lintasan aspal/grid halus tanpa kesan AI generik */
+.bg-track-grid {
+  background-color: #121212;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Hard shadow ala poster esports / neo-brutalism */
+.shadow-brutal-yellow {
+  box-shadow: 5px 5px 0px #ffa300;
+}
+
+.shadow-brutal-white {
+  box-shadow: 4px 4px 0px #ffffff;
+}
+
+.shadow-brutal-p1 {
+  box-shadow: 4px 4px 0px #ffa300;
+}
+
+.shadow-brutal-p2 {
+  box-shadow: 4px 4px 0px #38bdf8;
+}
